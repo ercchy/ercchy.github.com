@@ -30,16 +30,15 @@
     <div id="content-wrapper">
       <div class="inner clearfix">       
         <section id="main-content" data-spy="scroll" data-target="#sidebar">
-          <div id="about-me">
+          <div id="about">
             <h1>About me</h1>
             <p>
-              In my life I had the fortune to gain all sorts of experience in various profession from sales to charity and in that path I have been blessed to work with excellent people, which were the jacks of their trades. So firs and foremost lesson I learned is that one needs to pursue their passion. That is how I stepped on the path of "IT gal". 
-              With my colorful background of work experiences I gained the experience of working in teams and with people of different varieties.
+              My name is Erika and this is my project page. I decided to put one together, because I would like to add some amazing projects to the ones I already have here. 
+              Existing projects came to life starting my student years (which I started fairly late). Before I went to university, I gained a great collage of experiences with various professions I was exploring. All professions I got to know had in common people working in them, that were driven by passion for them. I realized that it would be nice if I find my passion and enjoy it for the rest of my life. I learned that due to the problem solving nature in me, software engineering could be a great starting point. Now I love what I do
             </p>
-            <p>So now I am a professional and versatile software engineer graduate, with experience in the layout, design and coding of websites and also in designing and implementing resourceful solutions which support frequent UI and functionality changes. As a passionate software developer I strive to always improve my techniques and keep in pace with trends in the industry.
-            </p>            
             <p>
-              In my spare time I like educate myself with new trends and gain knowledge.I also like to do sports. Recently I took up bicycle riding and I found it is super fun because it enables me to experience landscapes of nature in a different way than I did until now.
+              In my spare time I like educate myself with new trends and gain knowledge of the industry, I like to follow awesome stuff that people come up with constantly, especially open source projects. 
+              Somewhat out of the ordinary (among other things) about me is that I do sports, but not as much as I would like to. Recently I took up bicycle riding and I found it is super fun because it is dynamic and fast (depends on how much one is pedaling, but nevermind...).
             </p>
             
           </div>
@@ -47,63 +46,90 @@
             <h1>My projects</h1>
             <p>
               <h2>bizstore.si</h2>
-              <p>url: <a href="http://bizstore.si">bizstore.si</a></p>
+                <ul>
+                  <li>
+                    implementing technologies: 
+                    <p>
+                      Application runs on AWS EC2 instance and is deployed with fabric into development, integration and production environment. It’s build within Django framework and for data management we used third party application south, which is almost a standard for data migration in Django.
+                    </p>
+                  </li>
+
+                <li>
+                  overview:
+                  <p>
+                    Application is meant for telecom company which recently  entered cloud brokerage market, to offer potential client easy to access information about services they offer. Visiting party may also order one or more services online right through the application and never need to stop by the telecoms shop.
+                    App is made as a CMS, where templates are logically chosen according the url entry client sent.
+                  </p>
+                </li>
+
+                <li>
+                  features:
+                  <p>
+                    Simple login with made with django forms (crispy forms) to enter user profile, which is linked to django's user.auth module
+                    Social login implemented with the third party component (janrain), enabling easy access.
+                    List of services/products according to category they come from
+                    Automatically generated price list according to the products price components from database. Product include features that are orderable or come in bundle with the product. 
+                    Shopping cart 
+                    check out / order procedure
+                    Revision of ordered services/product offer client was implemented for the purpose of enabling client to manage number of subscriptions online
+                    Messaging system is clients tool to communicate with technical and sales staff was implemented and connected to telecoms CRM
+                  </p>
+                </li>
+
+                <li>
+                  My role:
+                  <p>
+                    I was involved in the project from the start, as a developer and sometimes GUI expert. From implementing logic which presented shopping cart and processes that supported messaging system, my task was also to keep design response, since our client was telecom company. At times this task was not easy, bcs of tabular data which had to be presented in a price list of products/services.
+                      </p>
+                </li>
+              </ul>
               <p>
-                <h3>Project:</h3>
-                Marketplace web application that enables end-customers to order cloud services and get support online.                
+                <a href="bizstore.si">url: bizstore.si</a>
               </p>
-              
-              <h4>Features:</h4>
-                <p>
-                  Application involves offering cloud based services to end-customers to order. From this application customer is able to order and comunicate their wishes about services (usernames, domain names itd.), directly to technical staff. It is integrated with services platform providers CRM and so comunication between customer and sales department is also made trough application.
-                </p>
-              <h2>developers.simobil.si</h2>
-              <p>url: <a href="http://developers.simobil.si">developers.simobil.si</p>
-              <h3>Features:</h3>
-              <p>Application enables sales stuff to generete orders </p>
-              <h2>POPP</h2>
-              <p></p>
-              <h2>Sales application</h2>
-              <p></p>
+            </p>
+            <p>
+              <h2>Developers.simobil.si</h2>
+              <ul>
+                <li>
+                  Technologies: 
+                  <p>
+                    Django, openID
+                  </p>
+                </li>
+                <li>
+                    overview:
+                    <p>
+                    This website was build in order to mark competitors in the competition for new developer on marketplace, which offered award to developers of 10.000EUR and chance to offer their service on telecoms marketplace.
+                  </p>
+                </li>
+                <li>
+                  Features:
+                  <p>
+                    UI with dynamic features built with javascript
+                    Site enables users to login with their social accounts using OpenID library
+                  </p>
+                </li>
+              </ul>
+              <p>
+                <a href="developers.simobil.si">url: developers.simobil.si</a>
+              </p>
+
+
             </p>
 
 
-
-            <!--<p>This is still quite empty, since I had just put it up today, but I will slowly gather up the content which will speak....about me. U know same old, who I am and what I know and know of...yeah, just to annoy you!</p>
-
-            <p>I will leave this in, just to remember what to do, and bcs versatility on this page is very welcome</p>
-
-            <pre><code>$ cd your_repo_root/repo_name
-              $ git fetch origin
-              $ git checkout gh-pages
-            </code></pre>
-
-            <h3>Designer Templates</h3>
-
-            <p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-            <h3>Rather Drive Stick?</h3>
-
-            <p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-            <h3>Authors and Contributors</h3>
-
-            <p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-            <h3>Support or Contact</h3>
-
-            <p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-          </div>-->
-
         </section>
-        <aside id="sidebar" class="affix" data-spy="affix" data-offset-top="200">
-          <a href="#projects" class="button">My projects</a>
-          <a href="ErikaPogorelcCVzc.html" class="button">My CV</a>
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
+        <aside id="sidebar" class="affix" data-spy="affix" data-offset-top="272">
+          <a href="#about" class="button about">About me</a>
+          <a href="#projects" class="button projects">My projects</a>
+          <a href="ErikaPogorelcCVzc.html" class="button cv">My CV</a>
+          <p>This page's base template is using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
       </div>
     </div>
-
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <script>window.jQuery || document.write('<script src="javascripts/jquery.min.js"><\/script>')</script>
+    <script src="javascripts/bootstrap.min.js"></script>
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

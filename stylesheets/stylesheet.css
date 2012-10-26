@@ -152,15 +152,26 @@ header a.button.twitter {
   position: absolute;
   right: 0;
   top: 100px;
-  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+  background: transparent url(../images/twitter-button.png) 0 0 no-repeat;
 }
 aside a.button {
-  width: 138px;
-  padding-left: 64px;
+  width: 132px;
+  height: 50px;
+  padding-top: 30px;
+  padding-left: 70px;
   display: block;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
   margin-bottom: 20px;
   font-size: 21px;
+}
+aside a.button.projects {
+  background: transparent url(../images/projects-button.png) 0 0 no-repeat;
+}
+aside a.button.cv {
+  background: transparent url(../images/cv-button.png) 0 0 no-repeat;
+}
+aside a.button.about {
+  background: transparent url(../images/about-button.png) 0 0 no-repeat;
 }
 
 code, pre {
@@ -455,7 +466,7 @@ footer a:hover {
   aside#sidebar {
     float: none;
     width: 100% ! important;
-  }
+  }  
   aside#sidebar {
     background-image: none;
     margin-top: 20px;
@@ -463,6 +474,7 @@ footer a:hover {
     padding: 20px 0;
     min-height: 0;
   }
+
   aside#sidebar a.button {
     display: none;
   }
@@ -477,6 +489,12 @@ footer a:hover {
     margin-left: 0;
   }
 }
+.affix {
+    position: fixed;
+    top: 30px;
+    right: 50%;
+    margin-right: -470px;
+  }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
