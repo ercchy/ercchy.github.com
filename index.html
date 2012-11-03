@@ -33,12 +33,15 @@
           <div id="about">
             <h1>About me</h1>
             <p>
-              My name is Erika and this is my project page. I decided to put one together, because I would like to add some amazing projects to the ones I already have here. 
-              Existing projects came to life starting my student years (which I started fairly late). Before I went to university, I gained a great collage of experiences with various professions I was exploring. All professions I got to know had in common people working in them, that were driven by passion for them. I realized that it would be nice if I find my passion and enjoy it for the rest of my life. I learned that due to the problem solving nature in me, software engineering could be a great starting point. Now I love what I do
+              My name is Erika and welcome to my project page. I decided to put it together, because I would like to add some amazing projects to the ones I already have and when the time goes by I want to remember what I have been working on in the past. 
+              I mainly worked on the projects that I describe below, during my current employment at a startup which is providing services to "telco" companies in the field of cloud brokerage.
+              I worked in team with very talented people and my thanks goes to them, that I stepped on the path of software development.
+              Before I went to university, I gained a great collage of experiences with various professions I, that was exploring. But all of the professions I got to know had one thing in common: people working in them, were driven and passionate about what they did. Because of them I realized that I want nothing less than finding what I like to do and enjoy it for the rest of my life. I learned that due to the problem solving nature in me, software engineering is a great choice for me.
+              My education years lasted a while, as I finished three different secondary schools, before I enrolled at faculty of computer science at university of Ljubljana.
             </p>
             <p>
-              In my spare time I like educate myself with new trends and gain knowledge of the industry, I like to follow awesome stuff that people come up with constantly, especially open source projects. 
-              Somewhat out of the ordinary (among other things) about me is that I do sports, but not as much as I would like to. Recently I took up bicycle riding and I found it is super fun because it is dynamic and fast (depends on how much one is pedaling, but nevermind...).
+              In my spare time I like educate myself with new trends and gain knowledge of the industry, I like to follow awesome stuff that people come up with constantly, especially open source projects, where I can play around as well. 
+              Somewhat out of the ordinary (among other things) about me is that I do sports, but not as much as I would like to. Recently I took up bicycle riding and I found it is super fun because it is dynamic and fast (depends on how much one is pedaling, but never mind...).
             </p>
             
           </div>
@@ -48,81 +51,188 @@
               <h2>bizstore.si</h2>
                 <ul>
                   <li>
-                    implementing technologies: 
-                    <p>
-                      Application runs on AWS EC2 instance and is deployed with fabric into development, integration and production environment. It’s build within Django framework and for data management we used third party application south, which is almost a standard for data migration in Django.
-                    </p>
+                    Implementing technologies:
+                    <p><span class="mceItemHidden">
+                      Web application runs on AWS EC2 instance and is deployed with ["fabric"](http://docs.fabfile.org/en/1.4.3/) library into development, integration and production environment. It is built within Django 1.3 framework. Data migrations are managed with third party application ["south"](http://south.readthedocs.org/en/0.7.6/), which is performing schema changes on DB. Python three engine [mptt](https://github.com/django-mptt/django-mptt), was used to provide hierarchy to the services pages. For improving performance, we used [django_compressor](https://github.com/jezdez/django_compressor)
+                    </span></p>
                   </li>
 
-                <li>
-                  overview:
-                  <p>
-                    Application is meant for telecom company which recently  entered cloud brokerage market, to offer potential client easy to access information about services they offer. Visiting party may also order one or more services online right through the application and never need to stop by the telecoms shop.
-                    App is made as a CMS, where templates are logically chosen according the url entry client sent.
-                  </p>
-                </li>
+                  <li>
+                    Overview:
+                    <p><span class="">
+                      It's built according to the requirements of a telecom company, which had recently entered cloud brokerage market. The goal is to provide SOHO and SMEs with commodity like cloud services. Application offers a cloud based ordering and managing of those services, thus providing easy access with online product like shopping cart. 
+                      At the back end is made as a custom CMS, to provide easy managing of the front end. Templates are selected by the system according to the url that was requested. If template with the url's name exists than it is displayed otherwise generic template is displayed. With this feature, we enabled designers to work with easy to use templating system.
+                    </span></p>
+                  </li>
 
-                <li>
-                  features:
-                  <p>
-                    Simple login with made with django forms (crispy forms) to enter user profile, which is linked to django's user.auth module
-                    Social login implemented with the third party component (janrain), enabling easy access.
-                    List of services/products according to category they come from
-                    Automatically generated price list according to the products price components from database. Product include features that are orderable or come in bundle with the product. 
-                    Shopping cart 
-                    check out / order procedure
-                    Revision of ordered services/product offer client was implemented for the purpose of enabling client to manage number of subscriptions online
-                    Messaging system is clients tool to communicate with technical and sales staff was implemented and connected to telecoms CRM
-                  </p>
-                </li>
+                  <li>
+                    Features:
+                    <p>                      
+                      </p><ol>
+                        <li><span class="">
+                          Social login as well as custom login forms. User profile is connected to Django's user.auth module and which is connected to the cloud services gateway. Social login is implemented with the third party component (janrain).
+                        </span></li>
+                        <li><span class="">
+                          Cloud based services are listed in special categories, for easy access
+                        </span></li>
+                        <li><span class="">
+                          Price list is automatically generated from range of available services, that are stored in gateway DB. Services also include features that come in bundle with the service and the kind that are <span class="hiddenSpellError" pre="are " onclick="AtD.suggest(this);">orderable</span>. 
+                        </span></li>
+                        <li><span class="">
+                          Shopping cart includes order procedure which contains four steps. For better user experience we included jQuery into process for the purpose of calculating prices on the spot.
+                        </span></li>
+                        <li>
+                          Revision of ordered services by clients was implemented in order to provide them with easy to use managing of number of subscriptions for particular service.
+                        </li><li>
+                        </li><li><span class="">
+                          Customer is also provided with messaging system, to enable communication between technical stuff and themselves from application directly, but at the same time connecting to telecoms CRM.
+                        </span></li>
+                      </ol>
+                    <p></p>
+                  </li>
 
-                <li>
-                  My role:
-                  <p>
-                    I was involved in the project from the start, as a developer and sometimes GUI expert. From implementing logic which presented shopping cart and processes that supported messaging system, my task was also to keep design response, since our client was telecom company. At times this task was not easy, bcs of tabular data which had to be presented in a price list of products/services.
-                      </p>
-                </li>
+                  <li>
+                    My role:
+                    <p>
+                      I was involved in the project from the start, as a developer and sometimes front end expert (HTML5, CSS3, Javascript). From implementing logic which presented shopping cart and processes that supported messaging system and many others, my task was also to keep the design responsive, which was also important since we provide access from anywhere, with any device.
+                    </p>
+                  </li>
               </ul>
               <p>
-                <a href="bizstore.si">url: bizstore.si</a>
+                URL:<a href="bizstore.si"> bizstore.si</a>
               </p>
             </p>
             <p>
               <h2>Developers.simobil.si</h2>
+              <p>
+                <ul>
+                  <li>
+                    Some of the implementing technologies:
+                    <p>
+                      Django, HTML5, CSS3, Bootstrap for Twitter CSS and Javascript library, LESS
+                    </p>
+                  </li>
+                  <li>
+                      Overview:
+                      <p>
+                        This was a short project, that was build "on the fly", with which telecom company (Simobil.si), wanted to attract prospected developers of cloud based services onto cloud services platform. 
+                      </p>
+                  </li>
+                  <li>
+                    Features:
+                    <p>
+                      <ol>
+                        <li>
+                          Social login was implemented with the use of django-openid-auth library forked from Jannis Leidel's repository and added some specific features
+                        </li>
+                        <li>
+                          UI has some dynamic features, which was achieved with using Javascript
+                        </li>
+                    </p>
+                  </li>
+                </ul>
+              </p>
+              <p>
+                URL: <a href="developers.simobil.si">developers.simobil.si</a>
+              </p>
+            </p>
+            <p>
+              <h2>POPP - custom CRM</h2>
               <ul>
                 <li>
-                  Technologies: 
+                  Implementing technologies:
                   <p>
-                    Django, openID
-                  </p>
+                    Application also runs on AWS EC2 instance, written in python with Django 1.3, framework. Connector for the AWS is using boto library. 
+                  </p>                   
                 </li>
                 <li>
-                    overview:
-                    <p>
-                    This website was build in order to mark competitors in the competition for new developer on marketplace, which offered award to developers of 10.000EUR and chance to offer their service on telecoms marketplace.
+                  Overview:
+                  <p>
+                    This is an internal application of which intention is to implement custom CRM which is used by the sales staff of a telecom company, which is offering cloud based subscriptions to services. Within application sales staff is enabled to take the client through a process of ordering to a subscription of a cloud based service. At the end a salesperson can print all the legal documents and quote in order for a client to sign it. Application also generates reports for management to have access to information of sales personnel's success, which is implemented with google charts javascript library. Within the application a salesperson is also able to lookup domain availability, since one of the offers is domain registration. Sales staff is also able to send quote directly to clients email address.
                   </p>
                 </li>
                 <li>
                   Features:
                   <p>
-                    UI with dynamic features built with javascript
-                    Site enables users to login with their social accounts using OpenID library
+                    Sales is able to store clients data in db, which is then linked to their account in order to easily calculate commissions. 
+                    Quote editor is enabling sales to make taylormade quotes for their clients, ordering services.
+                    Quotes that had been made are easily sent to the client directly from within application via email, where every email is seemingly sent from the salesperson address. We achieved this by using AWS SES and a boto library to connect addresses of the staff to AWS
+                    Pricelist is providing them with easy access to the information which is usually needed quick
+                    Media files are served from within the application, in order for sales to show or print them out and live them at the potential client to contemplate
+                    From application management is able to see the success of the sales personnel on how much quotes have been made, sent to the clients and how many quotes had been realized.
+                    We also built in a dynamic tool written with javascript using MVVM framework Knockout.js, which helps staff to calculate expenses of a compatible offers in order to show clients how much they can gain with the subscription with them
+                    Domain availability check tool was incorporated in to application to enable staff to check for available domain names which client wishes on the spot. User don’t have to be computer savy in order to sell services.
+                    Messaging system, which is implemented in order for the staff to talk to technical staff about a particular client and make notes about them.
+                    Generating documents in PDF format enabled staff to put out quick quote, which could client turn into a contract on the spot if they wished
+                  </p>
+                </li>
+                <li>
+                  My role:
+                  <p>
+                    I was involved in this project from the beginning to the end (altho is still a work in progress, as any software that is alive). My responsibility was to implement features like dynamic UI for the domain availability, building price comparison tool, implementing connection to AWS SES, generation pricelist directly from db and implementing the messaging system.
                   </p>
                 </li>
               </ul>
               <p>
-                <a href="developers.simobil.si">url: developers.simobil.si</a>
-              </p>
-
-
+                unfortunately this is an internal company application and not available to the general public, so I can not provide url.
+              </p>              
             </p>
-
-
+            <p>
+              <h2>Sales app</h2>
+              <p>
+                <ul>
+                  <li>
+                    Technologies:
+                    <p>
+                      Django 1.3, Javascript, Jquery, HTML5, CSS3, LESS
+                    </p>
+                  </li>
+                  <li>
+                    Overview:
+                    <p>
+                      This application was made when in order for the company, which just entered the cloud brokerage market, to enable staff to educate them selfs about the services they were now selling. Since they just entered the marked and had previously no experiences with selling cloud based services, they are able to follow a series of questions and get the answers that were imperative in order to figure out best possible solutions for them. This tool is simply taking user step by step through questions that were defined earlier by the providers of the services.
+                    </p>
+                  </li>
+                  <li>
+                    My role:
+                    <p>
+                      I undertook this project at the beginning of my employment with the company that is providing gateway for cloud services for the telecom companies. Project had few back end services that were written within Django framework, such as serving static pages, assembling data and pushing it to views. Everything else was made as a dynamic client side web application, built with jquery framework for javascript.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+              <p>
+                Unfortunately this is an internal company application and as such not available to the general public, so I can not provide url.
+              </p>
+            </p>
+            <p>
+              <h2>Freelance projects</h2>
+              <p>
+                <ol>
+                  <li>
+                    Web page built with Joomla CMS, for a daycare center
+                    URL: [vrtecobgozdu.si](http://www.vrtecobgozdu.si)
+                  </li>
+                  <li>
+                    Web page built with AS3 in Flash, for a interior design company
+                    URL: [dzynrdesigns.com](http://www.dzynrdesigns.com)
+                  </li>
+                  <li>
+                    Web application built as a PHP Joomla component, for a beauty salons, to manage schedules and enabling clients to make appointments online.
+                    URL: unfortunately, site is no longer available
+                  </li>
+                </ol>
+              </p>
+            </p>            
         </section>
         <aside id="sidebar" class="affix" data-spy="affix" data-offset-top="272">
           <a href="#about" class="button about">About me</a>
           <a href="#projects" class="button projects">My projects</a>
           <a href="ErikaPogorelcCVzc.html" class="button cv">My CV</a>
+          <p>
+          </p>
+          <img src="images/ercchy.jpg" alt="ercchy" />
+          <p>
           <p>This page's base template is using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
         </aside>
       </div>
