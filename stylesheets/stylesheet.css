@@ -30,9 +30,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/*ol, ul {
 	list-style: none;
-}
+}*/
 blockquote, q {
 	quotes: none;
 }
@@ -203,6 +203,7 @@ pre code {
 
 ul, ol, dl {
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 
@@ -343,8 +344,7 @@ blockquote {
 }
 
 ul li {
-  /*list-style: disc inside;*/
-  padding-left: 20px;
+  list-style: disc;  
 }
 
 ol li {
@@ -501,6 +501,9 @@ aside.affix {
     bottom: 0%;
     right: 50%;
     margin-right: -470px;
+}
+.myself{
+  text-align: center;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

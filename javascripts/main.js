@@ -1,1 +1,15 @@
-console.log('This would be the main JS file.');
+var Ercchinator = window.Ercchinator || {};
+
+(function($, Ercchinator) {
+
+    var init = function() {
+        $(document).ready(function(){ 
+
+        });
+    };
+
+    Ercchinator.Base = {};
+    Ercchinator.Base.init = init;
+
+})(jQuery, Ercchinator);
+
