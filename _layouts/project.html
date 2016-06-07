@@ -1,0 +1,20 @@
+---
+---
+<section>
+    <a href="{{ page.link }}" class="img">
+        <img src="{{ page.image }}" alt="" />
+    </a>
+    <div class="content">
+        <div class="inner">
+            <h2>{{ page.title }}</h2>
+            <h4>{{ page.employer }}</h4>
+            <p>{{ content }}</p>
+
+            <ul class="tags">
+                {% for tag in page.tags|split:"," %}
+                    <li class="tag">{{ tag }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>

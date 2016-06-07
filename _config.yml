@@ -1,0 +1,21 @@
+# Site settings
+title: Erika Pogorelc - Software Engineer
+email: erika@serox.si
+description: >
+  Full Stack Web Developer with a great interest in a beautiful design and a great user experience.
+baseurl: "" # the subpath of your site, e.g. /blog
+
+url: "http://ercchy.github.io"
+
+collections:
+- projects
+- about
+
+twitter_username: ercchy
+github_username:  ercchy
+
+# Build settings
+markdown: kramdown
+
+
+

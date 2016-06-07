@@ -1,0 +1,71 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+@import
+		'libs/vars',
+		'libs/functions',
+		'libs/mixins',
+		'libs/skel',
+		'font-awesome.min.css'
+;
+
+
+
+@include skel-breakpoints((
+	xlarge: '(max-width: 1680px)',
+	large: '(max-width: 1280px)',
+	medium: '(max-width: 980px)',
+	small: '(max-width: 736px)',
+	xsmall: '(max-width: 480px)',
+	xxsmall: '(max-width: 360px)'
+));
+
+@include skel-layout((
+	reset: 'full',
+	boxModel: 'border',
+	grid: ( gutters: 1.5em )
+));
+
+// Base.
+
+@import
+		'base/page',
+		'base/typography'
+;
+
+// Component.
+
+@import
+		'components/box',
+		'components/button',
+		'components/features',
+		'components/form',
+		'components/icon',
+		'components/image',
+		'components/list',
+		'components/section',
+		'components/split',
+		'components/spotlights',
+		'components/table',
+		'components/tag',
+		'components/wrapper'
+;
+
+// Layout.
+
+@import
+		'layout/header',
+		'layout/wrapper',
+		'layout/footer',
+		'layout/sidebar',
+		'layout/intro'
+;
+
+// Import syntax highlight
+@import
+		'syntax-highlighting'
+;
